@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>codigoCesar.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+codigoCesar.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">string</span>
+<span class="s0">from </span><span class="s1">array </span><span class="s0">import </span><span class="s1">array</span>
+
+
+<span class="s0">def </span><span class="s1">codigoCesar</span><span class="s2">(</span><span class="s1">mensajeSinCifrar</span><span class="s2">,</span><span class="s1">clave</span><span class="s2">):</span>
+
+    <span class="s1">mensajeSinCifrar</span>
+    <span class="s1">desplazamiento </span><span class="s2">= </span><span class="s1">clave</span>
+
+
+    <span class="s1">abecedario </span><span class="s2">= [</span><span class="s3">'a'</span><span class="s2">, </span><span class="s3">'b'</span><span class="s2">, </span><span class="s3">'c'</span><span class="s2">, </span><span class="s3">'d'</span><span class="s2">, </span><span class="s3">'e'</span><span class="s2">, </span><span class="s3">'f'</span><span class="s2">, </span><span class="s3">'g'</span><span class="s2">, </span><span class="s3">'h'</span><span class="s2">, </span><span class="s3">'i'</span><span class="s2">, </span><span class="s3">'j'</span><span class="s2">, </span><span class="s3">'k'</span><span class="s2">, </span><span class="s3">'l'</span><span class="s2">, </span><span class="s3">'m'</span><span class="s2">, </span><span class="s3">'n'</span><span class="s2">, </span><span class="s3">'ñ'</span><span class="s2">, </span><span class="s3">'o'</span><span class="s2">, </span><span class="s3">'p'</span><span class="s2">, </span><span class="s3">'q'</span><span class="s2">, </span><span class="s3">'r'</span><span class="s2">, </span><span class="s3">'s'</span><span class="s2">, </span><span class="s3">'t'</span><span class="s2">, </span><span class="s3">'u'</span><span class="s2">, </span><span class="s3">'v'</span><span class="s2">, </span><span class="s3">'w'</span><span class="s2">, </span><span class="s3">'x'</span><span class="s2">, </span><span class="s3">'y'</span><span class="s2">, </span><span class="s3">'z'</span><span class="s2">]</span>
+
+    <span class="s0">for </span><span class="s1">Letra </span><span class="s0">in </span><span class="s1">mensajeSinCifrar</span><span class="s2">:</span>
+        <span class="s0">for </span><span class="s1">Letra </span><span class="s0">in </span><span class="s1">abecedario</span><span class="s2">:</span>
+            <span class="s1">indice </span><span class="s2">= </span><span class="s1">abecedario</span><span class="s2">.</span><span class="s1">index</span><span class="s2">(</span><span class="s1">Letra</span><span class="s2">)</span>
+            <span class="s1">nuevaLetra </span><span class="s2">= (</span><span class="s1">indice </span><span class="s2">+ </span><span class="s1">desplazamiento</span><span class="s2">) % </span><span class="s1">len</span><span class="s2">(</span><span class="s1">abecedario</span><span class="s2">)</span>
+            <span class="s1">resultado </span><span class="s2">+= </span>
+
+</pre>
+</body>
+</html>
